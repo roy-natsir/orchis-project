@@ -1,0 +1,18 @@
+type CVEntity @entity {
+  id: ID!
+  owner: Bytes!
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  transactionHash: Bytes!
+}
+
+type BusinessCardEntity @entity {
+  id: ID!
+  tokenId: BigInt!
+  owner: Bytes!
+  name: String!
+  position: String!
+  company: String!
+  contact: String!
+  metadata: String!
+}

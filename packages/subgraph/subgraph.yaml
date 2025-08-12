@@ -1,0 +1,24 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: ProfessionalCV
+    network: sepolia
+    source:
+      address: "0x0000000000000000000000000000000000000000"
+      abi: ProfessionalCV
+      startBlock: 0
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - CVEntity
+      abis:
+        - name: ProfessionalCV
+          file: ./abis/ProfessionalCV.json
+      eventHandlers:
+        - event: CVUpdated(indexed address,uint256)
+          handler: handleCVUpdated
+      file: ./src/mapping.ts
