@@ -1,172 +1,138 @@
-# Eripmav Portfolio
+# Eripmav Portfolio: My On-Chain Professional Portfolio
 
-🚀 **Web3 Portfolio DApp** yang menampilkan profil profesional menggunakan teknologi blockchain, smart contracts, dan decentralized technologies.
+Welcome to the repository for my main portfolio project. I am building this **On-Chain Professional Portfolio** in parallel with my comprehensive Full Stack Web3 developer roadmap.
 
-## 🌟 Fitur Utama
+This project is my way of applying every concept I learn—from frontend fundamentals to advanced smart contract engineering—into a single, tangible showcase. It's not just a project; it's the living record of my journey as a developer.
 
-- 📝 **Professional CV on Blockchain**: Simpan data CV di smart contract
-- 🎨 **NFT Business Card**: Business card dalam bentuk NFT
-- 🌐 **Decentralized Frontend**: Next.js DApp dengan Web3 integration
-- 📊 **Subgraph Indexing**: Data indexing menggunakan The Graph Protocol
-- 🔗 **Multi-chain Support**: Ethereum, Polygon, dan network lainnya
+---
 
-## 🏗️ Arsitektur
+## 🎯 My Project Goal
 
-Proyek ini menggunakan arsitektur **monorepo** dengan tiga komponen utama:
+My goal is to build my professional portfolio directly on-chain. This will serve as a verifiable, immutable record of my skills, experience, and completed projects.
 
-### 📦 Packages
+Instead of just listing my skills on a traditional CV, I'm building a platform to **demonstrate** them. This project is designed to be my unique "digital CV" and a practical showcase of my abilities for recruiters, technical interviewers, and the Web3 community.
 
-1. **`packages/contracts/`** - Smart contracts (Foundry)
-   - `ProfessionalCV.sol` - Contract untuk data CV
-   - `NFTBusinessCard.sol` - Contract untuk NFT business card
+---
 
-2. **`packages/frontend/`** - Frontend DApp (Next.js 14)
-   - App Router dengan TypeScript
-   - Tailwind CSS untuk styling
-   - wagmi + viem untuk Web3 integration
-   - RainbowKit untuk wallet connection
+## 🚀 Live Demo & Status
 
-3. **`packages/subgraph/`** - Data indexing (The Graph)
-   - GraphQL API untuk query blockchain data
-   - Real-time data synchronization
+*   **Live Demo:** [eripmav-portfolio.vercel.app](https://eripmav-portfolio.vercel.app/) *(This will be the live URL after deployment)*
+*   **CI/CD Pipeline Status:** ![CI](https://github.com/royweb3dev/eripmav-portfolio/actions/workflows/ci.yml/badge.svg)
 
-## 🚀 Quick Start
+---
+
+## 🏗️ Architecture Overview
+
+This project utilizes a **monorepo** architecture managed with `pnpm workspaces`. This keeps the code organized and allows for better management of the different parts of the application.
+
+The three core components are:
+
+1.  **`packages/contracts/`**: Contains all the Solidity smart contracts. This is where the on-chain logic lives. It's developed and tested with Foundry.
+2.  **`packages/frontend/`**: The user-facing DApp. It's a Next.js 14 application that allows users (and myself) to interact with the smart contracts.
+3.  **`packages/subgraph/`**: The data indexing layer. This uses The Graph Protocol to efficiently query data from the blockchain, ensuring the frontend is fast and responsive.
+
+---
+
+## 🛠️ My Tech Stack
+
+My tech stack for this project evolves as I progress through my learning roadmap.
+
+*   **Smart Contracts:** Solidity, Foundry, OpenZeppelin Contracts
+*   **Frontend:** Next.js, TypeScript, Tailwind CSS, ethers.js, wagmi, viem, RainbowKit
+*   **Data Indexing:** The Graph Protocol, GraphQL, AssemblyScript
+*   **DevOps & Tooling:** GitHub Actions (CI/CD), pnpm, Git
+
+---
+
+## ⚡ Core Features (Developed in Stages)
+
+I'm developing the features in incremental stages to ensure a sustainable pace and high-quality outcome.
+
+### **Stage 1: Foundational MVP**
+1.  **A Professional Portfolio Website:** An 'About Me' section, skills showcase, and a project gallery (initially with static data).
+2.  **Initial Web3 Integration:** Wallet connection functionality and display of the connected wallet address and ENS name.
+
+### **Stage 2: On-Chain Functionality**
+3.  **The Smart Contract CV:** An on-chain data structure for my professional experience and skills, with owner-only functions to add or update information.
+4.  **NFT Business Cards:** A mintable ERC-721 token representing my professional business card, with dynamic metadata from IPFS.
+
+### **Stage 3: Professional & Advanced Features**
+5.  **An On-Chain Achievement System:** A system for linking on-chain badges for completed courses or verified skills.
+6.  **Multi-Chain Support:** Contracts deployed to multiple testnets (e.g., Ethereum Sepolia, Arbitrum Sepolia), with a network switching UI on the frontend.
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js 18+
-- pnpm 8+
-- Foundry (untuk smart contracts)
-- Git
+*   Node.js (v18 or later)
+*   pnpm (v8 or later)
+*   Foundry
+*   Git
 
-### Installation
+### Local Development
 
-```bash
-# Clone repository
-git clone https://github.com/username/eripmav-portfolio.git
-cd eripmav-portfolio
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/royweb3dev/eripmav-portfolio.git
+    cd eripmav-portfolio
+    ```
 
-# Install dependencies
-pnpm install
+2.  **Install all dependencies from the root directory:**
+    ```bash
+    pnpm install
+    ```
 
-# Setup smart contracts
-cd packages/contracts
-forge install
-forge build
-forge test
+3.  **Set up the smart contracts:**
+    *   Navigate to the contracts package: `cd packages/contracts`
+    *   Install Foundry libraries: `forge install`
+    *   Build the contracts: `forge build`
+    *   Run the tests: `forge test`
 
-# Setup dan jalankan frontend
-cd ../frontend
-pnpm dev
-```
+4.  **Run the frontend development server:**
+    *   Navigate to the frontend package: `cd packages/frontend`
+    *   Start the server: `pnpm dev`
+    *   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 🔧 Development Commands
+---
 
-```bash
-# Frontend development
-pnpm dev
+## 📊 My Development Philosophy: A Learn-in-Public Journey
 
-# Build semua packages
-pnpm build
+My development philosophy for this project is **"learn and apply immediately."** I am building features in parallel with my learning roadmap to ensure every theoretical concept is reinforced with practical application. This is a living project that documents my growth.
 
-# Test smart contracts
-pnpm contracts:test
+*   **Phase 1: Foundation (Parallel with Roadmap Phases 1-2)**
+    *   I built the static portfolio website while mastering HTML/CSS/JS. I established my Git workflow and deployed the first version to Vercel.
 
-# Deploy smart contracts
-pnpm contracts:deploy --network sepolia
+*   **Phase 2: React Integration (Parallel with Roadmap Phases 3-4)**
+    *   I migrated the static site to a Next.js & TypeScript application and implemented my first frontend tests.
 
-# Build subgraph
-pnpm subgraph:build
+*   **Phase 3: Web3 Integration (Parallel with Roadmap Phases 5-7)**
+    *   I integrated wallet connection and IPFS for metadata and practiced reading basic data from the blockchain.
 
-# Clean semua build artifacts
-pnpm clean
-```
+*   **Phase 4: Smart Contracts (Parallel with Roadmap Phases 8-9)**
+    *   I wrote and rigorously tested the `ProfessionalCV` smart contract with Foundry, deploying it to a testnet and connecting it to the frontend.
 
-## 🛠️ Tech Stack
+*   **Phase 5: Advanced Features (Parallel with Roadmap Phases 10-11)**
+    *   I will implement multi-chain deployment, set up a full CI/CD pipeline with GitHub Actions, and conduct final performance optimizations.
 
-### Blockchain & Smart Contracts
-- **Solidity** - Smart contract language
-- **Foundry** - Smart contract development framework
-- **OpenZeppelin** - Security-audited contract libraries
+---
 
-### Frontend
-- **Next.js 14** - React framework dengan App Router
-- **TypeScript** - Type-safe development
-- **Tailwind CSS** - Utility-first CSS framework
-- **wagmi** - React hooks untuk Ethereum
-- **viem** - TypeScript interface untuk Ethereum
-- **RainbowKit** - Wallet connection UI
+## 🎯 Why I Chose This Project
 
-### Indexing & API
-- **The Graph Protocol** - Decentralized indexing
-- **GraphQL** - Query language untuk API
+*   **Achievable Scope:** The project has a clear focus on my personal portfolio, which keeps the scope controlled and ensures I can finish it.
+*   **Unique Differentiator:** An interactive, on-chain portfolio stands out significantly from standard static websites, demonstrating a native Web3 mindset.
+*   **Comprehensive Skill Showcase:** Successfully completing this project will be tangible proof of my full-stack capabilities, from UI design and smart contract security to DevOps automation.
+*   **Practical Learning Tool:** Every concept from my learning roadmap is immediately applied to a real-world feature, reinforcing my knowledge and providing context.
 
-### DevOps & Tools
-- **GitHub Actions** - CI/CD pipeline
-- **pnpm** - Fast package manager dengan workspace support
-- **ESLint & Prettier** - Code linting dan formatting
-
-## 📁 Struktur Proyek
-
-```
-eripmav-portfolio/
-├── .github/workflows/         # GitHub Actions CI/CD
-├── docs/                      # Dokumentasi proyek
-├── packages/
-│   ├── contracts/             # Smart contracts (Foundry)
-│   ├── frontend/              # Next.js DApp
-│   └── subgraph/              # The Graph subgraph
-├── .gitignore
-├── LICENSE
-├── package.json               # Root package.json
-├── pnpm-workspace.yaml        # pnpm workspace config
-└── README.md
-```
-
-## 🌐 Deployment
-
-### Smart Contracts
-```bash
-cd packages/contracts
-forge script script/Deploy.s.sol --rpc-url $RPC_URL --broadcast --verify
-```
-
-### Frontend
-```bash
-cd packages/frontend
-pnpm build
-# Deploy ke Vercel, Netlify, atau platform pilihan
-```
-
-### Subgraph
-```bash
-cd packages/subgraph
-graph auth --product hosted-service $ACCESS_TOKEN
-graph deploy --product hosted-service username/eripmav-portfolio
-```
+---
 
 ## 🤝 Contributing
 
-1. Fork repository
-2. Buat feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push ke branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
+While this is a personal portfolio project, I'm always open to feedback and suggestions. Please feel free to open an issue if you find a bug or have an idea for improvement.
+
+---
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## 🙋‍♂️ Contact
-
-Roy Eripmav - [@username](https://twitter.com/username)
-
-Project Link: [https://github.com/username/eripmav-portfolio](https://github.com/username/eripmav-portfolio)
-
-## 🙏 Acknowledgments
-
-- [Foundry](https://getfoundry.sh/) - Smart contract development
-- [Next.js](https://nextjs.org/) - React framework
-- [The Graph](https://thegraph.com/) - Indexing protocol
-- [wagmi](https://wagmi.sh/) - React hooks untuk Ethereum
-- [OpenZeppelin](https://openzeppelin.com/) - Smart contract libraries
+This project is distributed under the MIT License. See `LICENSE` for more information.
