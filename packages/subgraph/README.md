@@ -1,6 +1,6 @@
 # Subgraph
 
-The Graph Protocol subgraph untuk indexing data dari smart contracts.
+The Graph Protocol subgraph for indexing data from smart contracts.
 
 ## Setup
 
