@@ -14,5 +14,5 @@ graph auth --product hosted-service <ACCESS_TOKEN>
 
 ```bash
 graph build
-graph deploy --product hosted-service username/eripmav-portfolio
+graph deploy --product hosted-service username/orchis-portfolio
 ```

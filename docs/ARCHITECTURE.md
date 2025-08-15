@@ -1,4 +1,4 @@
-Eripmav Portfolio Architecture
+Orchis Portfolio Architecture
 Overview
 
 This portfolio is a Decentralized Application (DApp) designed to showcase a professional profile using Web3 technologies. It serves as a living, on-chain CV that evolves in parallel with my developer journey.

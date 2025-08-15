@@ -1,6 +1,6 @@
 ## Frontend DApp
 
-The Next.js frontend for the Eripmav Portfolio DApp.
+The Next.js frontend for the Orchis Portfolio DApp.
 
 ## Tech Stack
 

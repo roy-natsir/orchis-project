@@ -1,5 +1,5 @@
 # My On-Chain Professional Portfolio (Web3 CV)
-## Eripmav Portfolio
+## Orchis Portfolio
 
 
 Welcome to the repository for my main portfolio project. I am building this **On-Chain Professional Portfolio** in parallel with my comprehensive Full Stack Web3 developer roadmap.

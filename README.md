@@ -1,4 +1,4 @@
-# Eripmav Portfolio: My On-Chain Professional Portfolio
+# Orchis Portfolio: My On-Chain Professional Portfolio
 
 Welcome to the repository for my main portfolio project. I am building this **On-Chain Professional Portfolio** in parallel with my comprehensive Full Stack Web3 developer roadmap.
 
@@ -16,8 +16,8 @@ Instead of just listing my skills on a traditional CV, I'm building a platform t
 
 ## 🚀 Live Demo & Status
 
-*   **Live Demo:** [eripmav-portfolio.vercel.app](https://eripmav-portfolio.vercel.app/) *(This will be the live URL after deployment)*
-*   **CI/CD Pipeline Status:** ![CI](https://github.com/royweb3dev/eripmav-portfolio/actions/workflows/ci.yml/badge.svg)
+*   **Live Demo:** [orchis-portfolio.vercel.app](https://orchis-portfolio.vercel.app/) *(This will be the live URL after deployment)*
+*   **CI/CD Pipeline Status:** ![CI](https://github.com/royweb3dev/orchis-portfolio/actions/workflows/ci.yml/badge.svg)
 
 ---
 
@@ -75,8 +75,8 @@ I'm developing the features in incremental stages to ensure a sustainable pace a
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/royweb3dev/eripmav-portfolio.git
-    cd eripmav-portfolio
+    git clone https://github.com/royweb3dev/orchis-portfolio.git
+    cd orchis-portfolio
     ```
 
 2.  **Install all dependencies from the root directory:**

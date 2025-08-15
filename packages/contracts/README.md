@@ -1,6 +1,6 @@
 Smart Contracts
 
-The core smart contract logic for the Eripmav Portfolio is built using the Foundry framework. This package is located in packages/contracts/.
+The core smart contract logic for the Orchis Portfolio is built using the Foundry framework. This package is located in packages/contracts/.
 Contracts
 
     ProfessionalCV.sol: Manages the on-chain storage of professional data, including work experience, skills, and educational background.
