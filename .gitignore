@@ -1,6 +1,5 @@
 # Dependencies
 node_modules/
-**/node_modules/
 
 # Environment variables
 .env
@@ -22,47 +21,39 @@ pids
 *.seed
 *.pid.lock
 
-# Coverage directory used by tools like istanbul
+# Coverage directory
 coverage/
 *.lcov
-
-# nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
+# Build output
+dist/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache
+.storybook-out/
+storybook-static/
 
-# Bower dependency directory (https://bower.io/)
-bower_components
+# Subgraph
+build/
+generated/
 
-# node-waf configuration
-.lock-wscript
+# Foundry
+cache/
+out/
+broadcast/
 
-# Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
-
-# Dependency directories
-jspm_packages/
-
-# TypeScript cache
-*.tsbuildinfo
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
+# Optional cache files
 .eslintcache
-
-# Optional stylelint cache
 .stylelintcache
-
-# Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
 .rts2_cache_es/
 .rts2_cache_umd/
 
-# Optional REPL history
+# REPL history
 .node_repl_history
 
 # Output of 'npm pack'
@@ -70,27 +61,6 @@ jspm_packages/
 
 # Yarn Integrity file
 .yarn-integrity
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# Next.js build output
-.next
-out/
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
-# Gatsby files
-.cache/
-public
-
-# Storybook build outputs
-.out
-.storybook-out
-storybook-static
 
 # Temporary folders
 tmp/
@@ -105,23 +75,7 @@ temp/
 
 # OS generated files
 .DS_Store
-.DS_Store?
-._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Foundry
-cache/
-out/
-broadcast/
-
-# Subgraph
-build/
-generated/
-
-# PNPM specific files
-pnpm-lock.yaml
-pnpm-workspace.yaml
-package.json
