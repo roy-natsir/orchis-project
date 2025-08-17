@@ -121,6 +121,7 @@ broadcast/
 build/
 generated/
 
-# pnpm yaml
+# PNPM specific files
 pnpm-lock.yaml
 pnpm-workspace.yaml
+package.json
