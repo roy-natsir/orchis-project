@@ -129,7 +129,7 @@ My development philosophy for this project is **"learn and apply immediately."**
 
 ## 🤝 Contributing
 
-While this is a personal portfolio project, I'm always open to feedback and suggestions. Please feel free to open an issue if you find a bug or have an idea for improvement.
+This is primarily a personal project, but I welcome bug reports, discussions, and learning-oriented PRs.
 
 ---
 
