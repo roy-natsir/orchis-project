@@ -75,7 +75,7 @@ I'm developing the features in incremental stages to ensure a sustainable pace a
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/roy-natsir/orchis-project] (https://github.com/roy-natsir/orchis-project)
+    git clone git@github.com:roy-natsir/orchis-project.git
     cd orchis-project
     ```
 
