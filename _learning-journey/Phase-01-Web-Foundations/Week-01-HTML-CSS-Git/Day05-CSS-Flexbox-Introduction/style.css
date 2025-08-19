@@ -310,6 +310,6 @@ h2 {
 @media (max-width: 768px) {
   .skills-grid,
   .projects-grid {
-    grid-template-columns: 1fr; /* jadi 1 kolom di HP */
+    grid-template-columns: 1fr;
   }
 }
