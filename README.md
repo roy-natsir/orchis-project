@@ -17,7 +17,7 @@ Instead of just listing my skills on a traditional CV, I'm building a platform t
 ## 🚀 Live Demo & Status
 
 *   **Live Demo:** [orchis-portfolio.vercel.app](https://orchis-project.vercel.app/) *(This will be the live URL after deployment)*
-*   **CI/CD Pipeline Status:** ![CI]([https://github.com/royweb3dev/orchis-portfolio](https://github.com/roy-natsir/orchis-project)/actions/workflows/ci.yml/badge.svg)
+*   **CI/CD Pipeline Status:** ![CI]([[https://github.com/royweb3dev/orchis-portfolio](https://github.com/roy-natsir/orchis-project)](https://github.com/roy-natsir/orchis-project)/actions/workflows/ci.yml/badge.svg)
 
 ---
 
@@ -75,8 +75,8 @@ I'm developing the features in incremental stages to ensure a sustainable pace a
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/royweb3dev/orchis-portfolio.git
-    cd orchis-portfolio
+    git clone https://github.com/royweb3dev/orchis-portfolio.git](https://github.com/roy-natsir/orchis-project)
+    cd orchis-project
     ```
 
 2.  **Install all dependencies from the root directory:**
