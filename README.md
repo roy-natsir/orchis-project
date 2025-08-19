@@ -16,8 +16,8 @@ Instead of just listing my skills on a traditional CV, I'm building a platform t
 
 ## 🚀 Live Demo & Status
 
-*   **Live Demo:** [orchis-portfolio.vercel.app](https://orchis-portfolio.vercel.app/) *(This will be the live URL after deployment)*
-*   **CI/CD Pipeline Status:** ![CI](https://github.com/royweb3dev/orchis-portfolio/actions/workflows/ci.yml/badge.svg)
+*   **Live Demo:** [orchis-portfolio.vercel.app](https://orchis-project.vercel.app/) *(This will be the live URL after deployment)*
+*   **CI/CD Pipeline Status:** ![CI]([https://github.com/royweb3dev/orchis-portfolio](https://github.com/roy-natsir/orchis-project)/actions/workflows/ci.yml/badge.svg)
 
 ---
 
