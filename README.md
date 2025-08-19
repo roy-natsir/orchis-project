@@ -11,7 +11,7 @@ This project is my way of applying every concept I learn—from frontend fundame
 My goal is to build my professional portfolio directly on-chain. This will serve as a verifiable, immutable record of my skills, experience, and completed projects.
 
 Instead of just listing my skills on a traditional CV, I'm building a platform to **demonstrate** them. This project is designed to be my unique "digital CV" and a practical showcase of my abilities for recruiters, technical interviewers, and the Web3 community.
-
+clone
 ---
 
 ## 🚀 Live Demo & Status
@@ -75,7 +75,7 @@ I'm developing the features in incremental stages to ensure a sustainable pace a
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/royweb3dev/orchis-portfolio.git](https://github.com/roy-natsir/orchis-project)
+    git clone [https://github.com/roy-natsir/orchis-project] (https://github.com/roy-natsir/orchis-project)
     cd orchis-project
     ```
 
