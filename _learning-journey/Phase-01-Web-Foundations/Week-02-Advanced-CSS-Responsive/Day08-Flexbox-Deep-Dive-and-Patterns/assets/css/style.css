@@ -129,17 +129,24 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
 }
 
-.brand-logo {
+.brand-logo .header-actions {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: bold;
   color: var(--color-text);
   text-decoration: none;
+  flex-shrink: 0;
+}
+
+.main-nav {
+  flex-grow: 1;
 }
 
 .main-nav ul {
   display: flex;
+  justify-content: center;
   gap: var(--spacing);
 }
 
@@ -297,7 +304,7 @@ section {
 
 .skill-card li {
   position: relative;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
   line-height: 1.4;
   font-size: 0.9rem;
   display: flex;
@@ -373,9 +380,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .tech-tag {
