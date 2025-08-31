@@ -12,12 +12,13 @@ My goal is to build my professional portfolio directly on-chain. This will serve
 
 Instead of just listing my skills on a traditional CV, I'm building a platform to **demonstrate** them. This project is designed to be my unique "digital CV" and a practical showcase of my abilities for recruiters, technical interviewers, and the Web3 community.
 clone
+
 ---
 
 ## 🚀 Live Demo & Status
 
-*   **Live Demo:** [orchis-portfolio.vercel.app](https://orchis-project.vercel.app/) *(This will be the live URL after deployment)*
-*   **CI/CD Pipeline Status:** ![CI]([[https://github.com/royweb3dev/orchis-portfolio](https://github.com/roy-natsir/orchis-project)](https://github.com/roy-natsir/orchis-project)/actions/workflows/ci.yml/badge.svg)
+- **Live Demo:** [orchis-portfolio.vercel.app](https://orchis-project.vercel.app/) _(This will be the live URL after deployment)_
+- **CI/CD Pipeline Status:** ![CI](<[[https://github.com/royweb3dev/orchis-portfolio](https://github.com/roy-natsir/orchis-project)](https://github.com/roy-natsir/orchis-project)/actions/workflows/ci.yml/badge.svg>)
 
 ---
 
@@ -37,10 +38,10 @@ The three core components are:
 
 My tech stack for this project evolves as I progress through my learning roadmap.
 
-*   **Smart Contracts:** Solidity, Foundry, OpenZeppelin Contracts
-*   **Frontend:** Next.js, TypeScript, Tailwind CSS, ethers.js, wagmi, viem, RainbowKit
-*   **Data Indexing:** The Graph Protocol, GraphQL, AssemblyScript
-*   **DevOps & Tooling:** GitHub Actions (CI/CD), pnpm, Git
+- **Smart Contracts:** Solidity, Foundry, OpenZeppelin Contracts
+- **Frontend:** Next.js, TypeScript, Tailwind CSS, ethers.js, wagmi, viem, RainbowKit
+- **Data Indexing:** The Graph Protocol, GraphQL, AssemblyScript
+- **DevOps & Tooling:** GitHub Actions (CI/CD), pnpm, Git
 
 ---
 
@@ -49,14 +50,17 @@ My tech stack for this project evolves as I progress through my learning roadmap
 I'm developing the features in incremental stages to ensure a sustainable pace and high-quality outcome.
 
 ### **Stage 1: Foundational MVP**
+
 1.  **A Professional Portfolio Website:** An 'About Me' section, skills showcase, and a project gallery (initially with static data).
 2.  **Initial Web3 Integration:** Wallet connection functionality and display of the connected wallet address and ENS name.
 
 ### **Stage 2: On-Chain Functionality**
+
 3.  **The Smart Contract CV:** An on-chain data structure for my professional experience and skills, with owner-only functions to add or update information.
 4.  **NFT Business Cards:** A mintable ERC-721 token representing my professional business card, with dynamic metadata from IPFS.
 
 ### **Stage 3: Professional & Advanced Features**
+
 5.  **An On-Chain Achievement System:** A system for linking on-chain badges for completed courses or verified skills.
 6.  **Multi-Chain Support:** Contracts deployed to multiple testnets (e.g., Ethereum Sepolia, Arbitrum Sepolia), with a network switching UI on the frontend.
 
@@ -66,34 +70,36 @@ I'm developing the features in incremental stages to ensure a sustainable pace a
 
 ### Prerequisites
 
-*   Node.js (v18 or later)
-*   pnpm (v8 or later)
-*   Foundry
-*   Git
+- Node.js (v18 or later)
+- pnpm (v8 or later)
+- Foundry
+- Git
 
 ### Local Development
 
 1.  **Clone the repository:**
+
     ```bash
     git clone https://github.com/roy-natsir/orchis-project.git
     cd orchis-project
     ```
 
 2.  **Install all dependencies from the root directory:**
+
     ```bash
     pnpm install
     ```
 
 3.  **Set up the smart contracts:**
-    *   Navigate to the contracts package: `cd packages/contracts`
-    *   Install Foundry libraries: `forge install`
-    *   Build the contracts: `forge build`
-    *   Run the tests: `forge test`
+    - Navigate to the contracts package: `cd packages/contracts`
+    - Install Foundry libraries: `forge install`
+    - Build the contracts: `forge build`
+    - Run the tests: `forge test`
 
 4.  **Run the frontend development server:**
-    *   Navigate to the frontend package: `cd packages/frontend`
-    *   Start the server: `pnpm dev`
-    *   Open [http://localhost:3000](http://localhost:3000) in your browser.
+    - Navigate to the frontend package: `cd packages/frontend`
+    - Start the server: `pnpm dev`
+    - Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
@@ -101,29 +107,29 @@ I'm developing the features in incremental stages to ensure a sustainable pace a
 
 My development philosophy for this project is **"learn and apply immediately."** I am building features in parallel with my learning roadmap to ensure every theoretical concept is reinforced with practical application. This is a living project that documents my growth.
 
-*   **Phase 1: Foundation (Parallel with Roadmap Phases 1-2)**
-    *   I built the static portfolio website while mastering HTML/CSS/JS. I established my Git workflow and deployed the first version to Vercel.
+- **Phase 1: Foundation (Parallel with Roadmap Phases 1-2)**
+  - I built the static portfolio website while mastering HTML/CSS/JS. I established my Git workflow and deployed the first version to Vercel.
 
-*   **Phase 2: React Integration (Parallel with Roadmap Phases 3-4)**
-    *   I migrated the static site to a Next.js & TypeScript application and implemented my first frontend tests.
+- **Phase 2: React Integration (Parallel with Roadmap Phases 3-4)**
+  - I migrated the static site to a Next.js & TypeScript application and implemented my first frontend tests.
 
-*   **Phase 3: Web3 Integration (Parallel with Roadmap Phases 5-7)**
-    *   I integrated wallet connection and IPFS for metadata and practiced reading basic data from the blockchain.
+- **Phase 3: Web3 Integration (Parallel with Roadmap Phases 5-7)**
+  - I integrated wallet connection and IPFS for metadata and practiced reading basic data from the blockchain.
 
-*   **Phase 4: Smart Contracts (Parallel with Roadmap Phases 8-9)**
-    *   I wrote and rigorously tested the `ProfessionalCV` smart contract with Foundry, deploying it to a testnet and connecting it to the frontend.
+- **Phase 4: Smart Contracts (Parallel with Roadmap Phases 8-9)**
+  - I wrote and rigorously tested the `ProfessionalCV` smart contract with Foundry, deploying it to a testnet and connecting it to the frontend.
 
-*   **Phase 5: Advanced Features (Parallel with Roadmap Phases 10-11)**
-    *   I will implement multi-chain deployment, set up a full CI/CD pipeline with GitHub Actions, and conduct final performance optimizations.
+- **Phase 5: Advanced Features (Parallel with Roadmap Phases 10-11)**
+  - I will implement multi-chain deployment, set up a full CI/CD pipeline with GitHub Actions, and conduct final performance optimizations.
 
 ---
 
 ## 🎯 Why I Chose This Project
 
-*   **Achievable Scope:** The project has a clear focus on my personal portfolio, which keeps the scope controlled and ensures I can finish it.
-*   **Unique Differentiator:** An interactive, on-chain portfolio stands out significantly from standard static websites, demonstrating a native Web3 mindset.
-*   **Comprehensive Skill Showcase:** Successfully completing this project will be tangible proof of my full-stack capabilities, from UI design and smart contract security to DevOps automation.
-*   **Practical Learning Tool:** Every concept from my learning roadmap is immediately applied to a real-world feature, reinforcing my knowledge and providing context.
+- **Achievable Scope:** The project has a clear focus on my personal portfolio, which keeps the scope controlled and ensures I can finish it.
+- **Unique Differentiator:** An interactive, on-chain portfolio stands out significantly from standard static websites, demonstrating a native Web3 mindset.
+- **Comprehensive Skill Showcase:** Successfully completing this project will be tangible proof of my full-stack capabilities, from UI design and smart contract security to DevOps automation.
+- **Practical Learning Tool:** Every concept from my learning roadmap is immediately applied to a real-world feature, reinforcing my knowledge and providing context.
 
 ---
 

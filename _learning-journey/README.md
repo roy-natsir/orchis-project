@@ -1,8 +1,11 @@
 # 🚀 FULL STACK WEB3 DEVELOPER ROADMAP
-*Revised Edition - 322 Days (46 Weeks)*
+
+_Revised Edition - 322 Days (46 Weeks)_
 
 ## 📋 Roadmap Overview
+
 This comprehensive roadmap covers:
+
 - Web Foundations (HTML, CSS, JavaScript)
 - Backend Fundamentals (Node.js, APIs, Databases)
 - Modern Frontend (React, Next.js)
@@ -14,7 +17,9 @@ This comprehensive roadmap covers:
 - DevOps & Professional Development
 
 ## 📁 Structure
+
 Each day contains:
+
 - Learning objectives
 - Resources and materials
 - Practice exercises
@@ -22,6 +27,7 @@ Each day contains:
 - Progress tracking
 
 ## 🎯 Getting Started
+
 1. Start with Phase 1 - Web Foundations
 2. Follow the daily structure
 3. Complete projects and exercises

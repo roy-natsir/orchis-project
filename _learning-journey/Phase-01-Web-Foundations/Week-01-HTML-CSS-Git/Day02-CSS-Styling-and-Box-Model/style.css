@@ -154,7 +154,9 @@ a,
 .skill-card,
 .project-card,
 .connect-wallet-btn {
-  transition: background-color 0.3s ease, transform 0.3s ease,
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 

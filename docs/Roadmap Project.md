@@ -5,6 +5,7 @@ This is a structured curriculum designed to guide you through building the four 
 Project Goal: Build the static yet professional User Interface (UI) for my On-Chain Portfolio.
 
 ## **Week 1: HTML, CSS & Git Fundamentals**
+
 ├── Day01-Topic: HTML Semantics -> Task: Create the basic file structure & HTML for the Portfolio page.
 ├── Day02-Topic: CSS Box Model -> Task: Apply base styling (colors, fonts) to the Portfolio page.
 ├── Day03-Topic: Git & GitHub -> Task: Initialize a Git repo & create a GitHub repository for the Portfolio.
@@ -13,8 +14,8 @@ Project Goal: Build the static yet professional User Interface (UI) for my On-Ch
 ├── Day06-Topic: Component Practice -> Task: Design the structure for project cards and skill cards.
 └── Day07-Topic: Weekly Review -> Task: Review & merge the `feat/ui-layout` branch.```
 
-
 ### **Week 2: Advanced CSS & Responsive Design**
+
 ├── Day08-Topic: Advanced Flexbox -> Task: Refine alignment & spacing in the Header/Hero sections.
 ├── Day09-Topic: CSS Grid -> Task: Build the project gallery layout for the Portfolio with CSS Grid.
 ├── Day10-Topic: Flexbox vs Grid -> Task: Evaluate & choose the best layout technique for each section.
@@ -23,8 +24,8 @@ Project Goal: Build the static yet professional User Interface (UI) for my On-Ch
 ├── Day13-Topic: Project Refactor -> Task: Review & refactor the entire CSS file for consistency.
 └── Day114-Topic: Weekly Review -> Task: Test responsiveness across various browser screen sizes.
 
-      
 ### **Week 3: Advanced CSS & Design**
+
 ├── Day15-Topic: CSS Transitions & Transforms -> Task: Add smooth hover effects & transitions to buttons/cards.
 ├── Day16-Topic: CSS Keyframe Animations -> Task: Add a simple "fade-in" animation on page load.
 ├── Day17-Topic: SASS Basics -> Task: (Optional) Refactor CSS to SASS for better organization.
@@ -32,8 +33,9 @@ Project Goal: Build the static yet professional User Interface (UI) for my On-Ch
 ├── Day19-Topic: Web Accessibility (A11Y) -> Task: Perform a basic accessibility audit on your Portfolio.
 ├── Day20-Topic: Animated Component -> Task: Create a CSS-only "loading spinner" component for later use.
 └── Day21-Topic: Weekly Review -> Task: Finalize the entire static visual design of the Portfolio.
-      
+
 ### **Week 4: First Portfolio Project**
+
 ├── Day22-Topic: Planning & Wireframing -> Task: Replace: Write a one-page design doc for the On-Chain Portfolio.
 ├── Day23-Topic: Semantic Markup -> Task: Replace: Re-audit the Portfolio's HTML for correct semantics.
 ├── Day24-Topic: Styling Implementation -> Task: Replace: Finish any pending CSS styling.
@@ -45,11 +47,13 @@ Project Goal: Build the static yet professional User Interface (UI) for my On-Ch
 ---
 
 ## 📚 **PHASE 2: JAVASCRIPT MASTERY (Days 29-63)**
+
 **Project Goal:** Make the static UI dynamic using vanilla JavaScript (as a foundational exercise before React).
 
-*(During Weeks 1-3, focus on separate JS exercises. In Weeks 4 & 5, apply concepts directly to the project.)*
+_(During Weeks 1-3, focus on separate JS exercises. In Weeks 4 & 5, apply concepts directly to the project.)_
 
 ### **Week 4: DOM Manipulation & Events**
+
 ├── Day50-Topic: DOM Selection -> Task: Select elements in the Portfolio UI with JavaScript.
 ├── Day51-Topic: Dynamic DOM Manipulation -> Task: Write a JS function to render project cards from a JS array of data.
 ├── Day52-Topic: Event Handling -> Task: Add event listeners for UI interactivity (e.g., filter buttons).
@@ -58,64 +62,64 @@ Project Goal: Build the static yet professional User Interface (UI) for my On-Ch
 ├── Day55-Topic: Project: Crypto Watchlist -> Task: Replace: Finalize all dynamic functionalities of the Portfolio.
 └── Day56-Topic: Weekly Review -> Task: Review & refactor all of your JavaScript code.
 
-*(Note: Much of this JS will be rewritten in Next.js, so this phase is for fundamental understanding.)*
+_(Note: Much of this JS will be rewritten in Next.js, so this phase is for fundamental understanding.)_
 
 ---
 
 ## 📚 **PHASE 4: MODERN FRONTEND ARCHITECTURE (Days 85-112)**
+
 **Project Goal:** Rebuild the Portfolio frontend with Next.js & TypeScript.
 
 ### **Weeks 1-3: React, Hooks, & Next.js**
+
 ├── Day85-Topic: Setup Vite/Next.js -> Task: Initialize a new Next.js project for the Portfolio.
 ├── Day86-Topic: Components & Props -> Task: Break the Portfolio UI down into React components (<Header>, <ProjectCard>).
 ├── Day92-Topic: useEffect -> Task: Use useEffect for simple logging or other side effects.
 ├── Day99-Topic: Setup Next.js App Router -> Task: Migrate the component structure to the App Router.
 
-      
 ### **Week 4: Portfolio Refactor Project**
+
 ├── Day106-112-Topic: Portfolio Refactor Project -> Task: Full Focus: Complete the migration of the Portfolio from Vanilla JS to Next.js. Ensure all previous functionality works.
 
 ---
 
 ## 📚 **PHASE 5 & 6: TESTING & WEB3 INTEGRATION (Days 113-154)**
+
 **Project Goal:** Integrate core Web3 functionality and basic testing into the Portfolio DApp.
 
 ### **Phase 5 (Weeks 1-3): Testing & Quality Assurance**
+
 ├── Day116-Topic: React Testing Library -> Task: Write a simple unit test for the <ProjectCard> component.
 ├── Day132-Topic: CI/CD Integration -> Task: Create a skeleton GitHub Actions file for frontend tests.
 
-      
 ### **Phase 6 (Weeks 2-3): Web3 Fundamentals & Integration**
+
 ├── Day142-Topic: ethers.js -> Task: Initialize an ethers.js provider in the Portfolio application.
 ├── Day143-Topic: Wallet Connection -> Task: Implement the "Connect Wallet" button using RainbowKit.
 ├── Day144-Topic: Reading Balances -> Task: Display the connected user's address & ETH balance.
 ├── Day148-154-Topic: First Web3 Project -> Task: Replace: Finalize and polish all basic Web3 integration features on your Portfolio.
 
-      
 ---
 
 ## 📚 **PHASE 7 & 8: ETHEREUM & SOLIDITY (Days 155-203)**
-**Project Goal:** Write the first draft of the `ProfessionalCV` and `NFTBusinessCard` smart contracts.
 
-    
+**Project Goal:** Write the first draft of the `ProfessionalCV` and `NFTBusinessCard` smart contracts.
 
 ├── Day170-Topic: Solidity Syntax -> Task: Create the ProfessionalCV.sol file with the basic contract skeleton & structs.
 ├── Day181-Topic: Project: Simple Bank -> Task: Replace: Implement the basic addExperience logic in the contract.
 ├── Day197-203-Topic: Project: Voting System -> Task: Replace: Design and implement the draft of NFTBusinessCard.sol.
-      
+
 ---
 
 ## 📚 **PHASE 9: PROFESSIONAL EVM ENGINEERING (Days 204-259)**
+
 **Project Goal:** Take the draft contracts and make them robust through professional testing with Foundry.
 
-*(Every day in this phase, the learned topic is directly applied to test the On-Chain Portfolio contracts.)*
-
-    
+_(Every day in this phase, the learned topic is directly applied to test the On-Chain Portfolio contracts.)_
 
 ├── Day204-Topic: Intro to Foundry -> Task: Set up a Foundry project for the Portfolio contracts.
 ├── Day208-Topic: Fuzz Testing -> Task: Write a fuzz test for the addExperience function.
 ├── Day211-Topic: Invariant Testing -> Task: Write an invariant test to ensure onlyOwner on addExperience works.
-
 
 ⭐ Job-Ready Milestone (Day 259 / ~Month 9): By the end of this phase, you have a DApp with professionally tested contracts and are ready to apply for jobs.
 
@@ -126,14 +130,11 @@ Project Goal: Deploy the contracts to L2 and build a subgraph for data efficienc
 Week 1 (Phase 10): Layer 2 Solutions & Scaling
 ├── Day261-Topic: Arbitrum Development -> Task: Write a script & deploy the Portfolio contracts to Arbitrum Testnet.
 
-    
-
 (Parallel) Weeks 2-3 (Phase 3): Backend Fundamentals
 ├── Task: Apply the material from Phase 3 now.
 ├── Task: Learn The Graph (Days 66-67) & immediately build a subgraph for the On-Chain Portfolio.
 ├── Task: Connect the Portfolio frontend to fetch `Experience` & `Skill` data from the subgraph.
 
-    
 ## **📚 PHASE 11: DEVOPS & PROFESSIONAL DEVELOPMENT (Days 288-322)**
 
 Project Goal: Finalize the project with a CI/CD pipeline and professional documentation.
@@ -141,11 +142,9 @@ Project Goal: Finalize the project with a CI/CD pipeline and professional docume
 Week 1: DevOps Fundamentals for Web3
 ├── Day291-Topic: GitHub Actions -> Task: Create a CI pipeline that runs `forge test` for the Portfolio repo.
 
-Week 2: Deployment & Infrastructure     
+Week 2: Deployment & Infrastructure  
 ├── Day295-Topic: Vercel Deployment -> Task: Ensure the Portfolio DApp is deployed & connected to the L2 Testnet.
 
-Weeks 4 & 5: Professional Skills & Career Prep    
+Weeks 4 & 5: Professional Skills & Career Prep  
 ├── Day310-Topic: Technical Documentation -> Task: Write the final comprehensive README.md for the Portfolio.
 ├── Day317-Topic: Resume Writing -> Task: Add the On-Chain Portfolio as the primary project on your resume.
-
-    
