@@ -15,14 +15,14 @@ wagmi + viem for Web3 integration
 RainbowKit for wallet connection
 
 ## Getting Started
-cd packages/frontend
-pnpm install
-pnpm dev
 
 cd packages/frontend
 pnpm install
 pnpm dev
 
+cd packages/frontend
+pnpm install
+pnpm dev
 
 ## Features
 
