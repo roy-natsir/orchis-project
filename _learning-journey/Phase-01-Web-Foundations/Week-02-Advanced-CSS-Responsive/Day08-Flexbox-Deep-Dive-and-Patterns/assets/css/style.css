@@ -10,9 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition:
-    color 0.2s ease-in-out,
-    background-color 0.2s ease-in-out,
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
     transform 0.2s ease-in-out;
 }
 
@@ -131,17 +129,24 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
 }
 
-.brand-logo {
+.brand-logo .header-actions {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: bold;
   color: var(--color-text);
   text-decoration: none;
+  flex-shrink: 0;
+}
+
+.main-nav {
+  flex-grow: 1;
 }
 
 .main-nav ul {
   display: flex;
+  justify-content: center;
   gap: var(--spacing);
 }
 
@@ -240,9 +245,7 @@ section {
   display: flex;
   flex-direction: column;
   height: 100%;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
@@ -301,7 +304,7 @@ section {
 
 .skill-card li {
   position: relative;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
   line-height: 1.4;
   font-size: 0.9rem;
   display: flex;
@@ -377,9 +380,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .tech-tag {
@@ -440,9 +441,7 @@ section {
   border-radius: 50%;
   background-color: currentColor;
   transform: scale(0);
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0;
   z-index: 0;
 }
@@ -458,9 +457,7 @@ section {
 .social-button svg {
   position: relative;
   z-index: 1;
-  transition:
-    color 0.3s ease,
-    filter 0.3s ease;
+  transition: color 0.3s ease, filter 0.3s ease;
 }
 
 .social-button:hover i,

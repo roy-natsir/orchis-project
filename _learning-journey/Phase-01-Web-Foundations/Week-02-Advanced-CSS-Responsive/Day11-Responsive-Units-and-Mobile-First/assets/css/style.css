@@ -10,9 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition:
-    color 0.2s ease-in-out,
-    background-color 0.2s ease-in-out,
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
     transform 0.2s ease-in-out;
 }
 
@@ -24,7 +22,7 @@
   --color-text-secondary: #6c757d;
   --color-accent: #7c3aed;
   --color-accent-rgb: 124, 58, 237; /* RGB version of Orchis purple */
-  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-main: 'Inter', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   --radius: 8px;
   --spacing: 1rem;
   --shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
@@ -50,12 +48,17 @@
 /* --------------------------
        2. Base Styles
     -----------------------------*/
+
+html {
+  font-size: 100%; /* 1rem = 16px */
+}
+
 body {
   font-family: var(--font-main);
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
-  font-size: clamp(16px, 2.5vw, 18px);
+  font-size: clamp(1rem, 22.5vw, 1.125rem);
 }
 
 a {
@@ -76,12 +79,12 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.2;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
   line-height: 1.2;
   margin-bottom: 0.75rem;
 }
@@ -97,22 +100,7 @@ ul {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing);
-}
-
-/* Skip link for accessibility */
-.skip-link {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  background: var(--color-accent);
-  color: #fff;
-  padding: 0.5rem;
-  z-index: 1000;
-}
-
-.skip-link:focus {
-  top: 0;
+  padding: 0 1rem;
 }
 
 /* --------------------------
@@ -131,17 +119,25 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
 }
 
-.brand-logo {
+.brand-logo,
+.header-actions {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: bold;
   color: var(--color-text);
   text-decoration: none;
+  flex-shrink: 0;
+}
+
+.main-nav {
+  flex-grow: 1;
 }
 
 .main-nav ul {
   display: flex;
+  justify-content: center;
   gap: var(--spacing);
 }
 
@@ -187,7 +183,7 @@ ul {
        4. Sections & Content Styling
     -----------------------------*/
 section {
-  padding: 4rem 0;
+  padding: 2em 1em;
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards;
 }
@@ -229,7 +225,7 @@ section {
   gap: 1.5rem;
   margin-top: 2.5rem;
   text-align: left;
-  align-items: stretch; /* Ensure equal height cards */
+  align-items: stretch;
 }
 
 .skill-card {
@@ -240,9 +236,7 @@ section {
   display: flex;
   flex-direction: column;
   height: 100%;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
@@ -301,7 +295,7 @@ section {
 
 .skill-card li {
   position: relative;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
   line-height: 1.4;
   font-size: 0.9rem;
   display: flex;
@@ -367,19 +361,11 @@ section {
   margin-bottom: 1rem;
 }
 
-.project-card figcaption {
-  font-size: 0.875rem;
-  color: var(--color-text-secondary);
-  margin-top: 0.5rem;
-}
-
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .tech-tag {
@@ -388,6 +374,30 @@ section {
   padding: 0.25rem 0.6rem;
   border-radius: 9999px;
   font-weight: 600;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* --------------------------
@@ -412,8 +422,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 1.5rem;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .social-button {
@@ -440,9 +450,7 @@ section {
   border-radius: 50%;
   background-color: currentColor;
   transform: scale(0);
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0;
   z-index: 0;
 }
@@ -458,9 +466,7 @@ section {
 .social-button svg {
   position: relative;
   z-index: 1;
-  transition:
-    color 0.3s ease,
-    filter 0.3s ease;
+  transition: color 0.3s ease, filter 0.3s ease;
 }
 
 .social-button:hover i,
@@ -509,7 +515,7 @@ section {
 /* --------------------------
        6. Media Queries
     -----------------------------*/
-@media (max-width: 1024px) {
+@media (max-width: 75em) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
@@ -524,7 +530,7 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
   h1 {
     font-size: clamp(1.5rem, 4vw, 2rem);
   }
@@ -536,6 +542,7 @@ section {
   .site-header .container {
     flex-direction: column;
     gap: 1rem;
+    justify-content: space-between;
   }
 
   .main-nav ul {
@@ -569,5 +576,23 @@ section {
   .card-header h3 {
     margin-left: 0;
     margin-top: 8px;
+  }
+}
+
+/* --------------------------
+   Mobile-First Layout
+-----------------------------*/
+
+/* Tablet (>=768px) */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop (>=1200px) */
+@media (min-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

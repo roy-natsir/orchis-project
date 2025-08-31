@@ -22,7 +22,7 @@ Project Goal: Build the static yet professional User Interface (UI) for my On-Ch
 ├── Day11-Topic: Responsive Units -> Task: Refactor the Portfolio's CSS to use rem and em units.
 ├── Day12-Topic: Media Queries -> Task: Make the Portfolio UI fully responsive for tablets & mobile.
 ├── Day13-Topic: Project Refactor -> Task: Review & refactor the entire CSS file for consistency.
-└── Day114-Topic: Weekly Review -> Task: Test responsiveness across various browser screen sizes.
+└── Day14-Topic: Weekly Review -> Task: Test responsiveness across various browser screen sizes.
 
 ### **Week 3: Advanced CSS & Design**
 
