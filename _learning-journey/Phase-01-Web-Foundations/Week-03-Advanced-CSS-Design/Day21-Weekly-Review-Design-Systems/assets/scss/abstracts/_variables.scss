@@ -1,12 +1,13 @@
-/* ==========================================
-   File: _variables.scss
-   Purpose: Global variables for the project
-   Includes: SCSS variables + CSS custom properties
-========================================== */
+// ==========================================
+// File: abstracts/_variables.scss
+// Purpose: Global variables and design tokens
+// ==========================================
 
-/* ------------------------------------------
-   SCSS Variables (compile-time)
------------------------------------------- */
+// SCSS Variables (compile-time)
+$breakpoint-tablet: 48em; // 768px
+$breakpoint-desktop: 64em; // 1024px
+$max-content-width: 65ch;
+
 $font-main:
   "Inter",
   Segoe UI,
@@ -34,9 +35,7 @@ $color-border-dark: #444;
 $color-text-dark: #e0e0e0;
 $color-text-secondary-dark: #a0a0a0;
 
-/* ------------------------------------------
-   CSS Custom Properties (runtime)
------------------------------------------- */
+// CSS Custom Properties (runtime)
 :root {
   /* Colors */
   --color-bg: #{$color-bg};
@@ -54,6 +53,7 @@ $color-text-secondary-dark: #a0a0a0;
   --radius: #{$radius};
   --spacing: #{$spacing};
   --shadow: #{$shadow};
+  --shadow-hover: 0 12px 24px rgba(var(--color-accent-rgb), 0.15);
 
   /* Dark mode variables */
   --color-bg-dark: #{$color-bg-dark};
