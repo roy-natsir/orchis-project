@@ -1,15 +1,25 @@
 // ==========================================
 // File: components/_social-buttons.scss
-// Purpose: Social media button styles
+// Purpose: Social media button styles (Dark theme compatible)
 // ==========================================
 
-// Brand color map
-$social-colors: (
+// Brand color map for light theme
+$social-colors-light: (
   github: #333,
   x: #000,
   linkedin: #0077b5,
   telegram: #26a5e4,
   medium: #000,
+  buymeacoffee: #ffdd00,
+);
+
+// Brand color map for dark theme (lighter variants for visibility)
+$social-colors-dark: (
+  github: #f0f6fc,
+  x: #ffffff,
+  linkedin: #0077b5,
+  telegram: #26a5e4,
+  medium: #ffffff,
   buymeacoffee: #ffdd00,
 );
 
@@ -59,14 +69,41 @@ $social-colors: (
       filter 0.3s ease;
   }
 
-  // Generate brand variants dynamically
-  @each $name, $color in $social-colors {
+  // Generate brand variants dynamically for light theme
+  @each $name, $color in $social-colors-light {
     &.#{$name} {
       color: $color;
 
       &::before {
         background-color: $color;
       }
+    }
+  }
+
+  // Dark theme overrides
+  [data-theme="dark"] & {
+    @each $name, $color in $social-colors-dark {
+      &.#{$name} {
+        color: $color;
+
+        &::before {
+          background-color: map-get($social-colors-light, $name);
+        }
+      }
+    }
+  }
+
+  &.github {
+    color: var(--github-color, #333);
+    &::before {
+      background-color: #333;
+    }
+  }
+
+  &.x {
+    color: var(--x-color, #000);
+    &::before {
+      background-color: #000;
     }
   }
 
@@ -108,4 +145,16 @@ $social-colors: (
   }
 
   @include focus-style;
+}
+
+// Additional utility class for better dark theme support
+.social-button-adaptive {
+  [data-theme="dark"] & {
+    &.github,
+    &.x,
+    &.medium {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+  }
 }

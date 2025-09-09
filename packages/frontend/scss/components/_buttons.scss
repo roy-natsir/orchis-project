@@ -11,8 +11,10 @@
   border-radius: var(--radius);
   cursor: pointer;
   font-weight: 600;
-  transition: transform 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55),
-    box-shadow 0.2s ease, opacity 0.3s ease;
+  transition:
+    transform 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    box-shadow 0.2s ease,
+    opacity 0.3s ease;
   will-change: transform;
 
   &:hover {

@@ -1,6 +1,6 @@
 // ==========================================
 // File: base/_typography.scss
-// Purpose: Typography styles and hierarchy
+// Purpose: Typography styles and hierarchy (WCAG AA Compliant)
 // ==========================================
 
 // Base body typography
@@ -45,12 +45,12 @@ h4 {
 
 h5 {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600; // Increased for better visibility
 }
 
 h6 {
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600; // Increased for better visibility
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -58,6 +58,7 @@ h6 {
 // Paragraphs
 p {
   margin-bottom: var(--spacing);
+  color: var(--color-text); // Ensure proper contrast
 }
 
 // Readable text constraint
@@ -72,12 +73,14 @@ p {
   font-size: clamp(1rem, 2.5vw, 1.125rem);
   color: var(--color-text-secondary);
   margin-bottom: 3rem;
+  font-weight: 500; // Slightly bolder for better readability
 }
 
 // Lists
 ul,
 ol {
   margin-bottom: var(--spacing);
+  color: var(--color-text); // Ensure proper contrast
 
   &:not(.reset-list) {
     padding-left: 1.25rem;
@@ -94,28 +97,39 @@ ol {
   li {
     margin-bottom: 0.5em;
     line-height: 1.5;
+    color: var(--color-text); // Ensure proper contrast
   }
 }
 
 // Inline elements
 a {
-  color: var(--color-accent);
+  color: var(--color-accent-accessible);
   text-decoration: none;
   transition: color 0.3s ease;
+  font-weight: 500; // Slightly bolder for better visibility
 
   &:hover,
   &:focus-visible {
     color: var(--color-text);
     text-decoration: underline;
+    text-decoration-thickness: 2px; // Thicker underline for better visibility
+  }
+
+  // High contrast mode support
+  @media (prefers-contrast: high) {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
   }
 }
 
 strong {
   font-weight: 700;
+  color: var(--color-text); // Ensure proper contrast
 }
 
 em {
   font-style: italic;
+  color: var(--color-text); // Ensure proper contrast
 }
 
 // Blockquotes
@@ -126,4 +140,75 @@ blockquote {
   color: var(--color-text-secondary);
   font-style: italic;
   font-size: 1.05em;
+  font-weight: 500; // Slightly bolder for better readability
+}
+
+// Small text and captions
+small,
+.text-small {
+  font-size: 0.875em;
+  color: var(--color-text-secondary);
+  font-weight: 500; // Ensure readability of small text
+}
+
+// Code and pre elements (if you use them)
+code {
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 0.9em;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  padding: 0.125rem 0.25rem;
+  border-radius: 3px;
+  border: 1px solid var(--color-border);
+}
+
+pre {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+
+  code {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+}
+
+// Focus styles for better accessibility
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+// High contrast media query support
+@media (prefers-contrast: high) {
+  body {
+    font-weight: 500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
+
+  a {
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  .section-subtitle,
+  small,
+  .text-small {
+    font-weight: 600;
+  }
 }

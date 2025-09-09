@@ -20,9 +20,10 @@ $color-bg: #ffffff;
 $color-surface: #f8f9fa;
 $color-border: #e9ecef;
 $color-text: #212529;
-$color-text-secondary: #6c757d;
+$color-text-secondary: #495057;
 $color-accent: #7c3aed;
-$color-accent-rgb: 124, 58, 237; // Orchis purple in RGB
+$color-accent-accessible: #5a2ba6;
+$color-accent-rgb: 124, 58, 237;
 
 $radius: 8px;
 $spacing: 1rem;
@@ -45,6 +46,10 @@ $color-text-secondary-dark: #a0a0a0;
   --color-text-secondary: #{$color-text-secondary};
   --color-accent: #{$color-accent};
   --color-accent-rgb: #{$color-accent-rgb};
+
+  --github-color: #333;
+  --x-color: #000;
+  --medium-color: #000;
 
   /* Fonts */
   --font-main: #{$font-main};
@@ -71,5 +76,9 @@ $color-text-secondary-dark: #a0a0a0;
     --color-border: var(--color-border-dark);
     --color-text: var(--color-text-dark);
     --color-text-secondary: var(--color-text-secondary-dark);
+    --color-accent-accessible: var(--color-accent);
+    --github-color: #f0f6fc;
+    --x-color: #ffffff;
+    --medium-color: #ffffff;
   }
 }
