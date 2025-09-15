@@ -1,34 +1,45 @@
 //File: Introduction to JavaScript and ES6/intro.js
 
-import { formatAddress, PI } from "./utils.js";
+// Import module
+import { formatAddress, multiply } from "./utils.js";
 
-console.log("--- Day 29: JS & ES6 Revolution ---");
+console.log("--- Day 29 Learning Start ---");
 
-// 1. Variables & Data Types with Web3 Context
-const userAddress = "0x742d35Cc6634C0532925a3b844Bc454e4438f44e";
-let tokenBalance = 12.5;
-let isWalletConnected = true;
+// let & const
+const wallet = "0xABC123456789";
+let balance = 0.5;
+console.log("Wallet:", wallet, "| Balance:", balance);
 
-// 2. Using the imported function with its CORRECT name.
-const userInfo = `User: ${formatAddress(userAddress)} | Balance: ${tokenBalance} ETH`;
-console.log(userInfo);
+// Template literals
+console.log(`User ${formatAddress(wallet)} has ${balance} ETH`);
 
-// 3. Arrow Functions
-const calculateGasFee = (gasPrice, gasLimit) => gasPrice * gasLimit;
-const fee = calculateGasFee(20.5, 21000);
-console.log(`Estimated Gas Fee: ${fee} Gwei`);
+// Arrow function
+const add = (a, b) => a + b;
+console.log("Sum:", add(2, 3));
 
-// 4. Destructuring
-const transaction = {
-  hash: "0xabc...def",
-  from: userAddress,
-  to: "0x987...xyz",
-  value: "1.0 ETH",
+// Destructuring
+const tx = { hash: "0xTX123", value: 1.2, status: "success" };
+const { hash, value } = tx;
+console.log(`Transaction ${hash} => ${value} ETH`);
+
+// Spread & Rest
+const arr1 = [1, 2];
+const arr2 = [...arr1, 3, 4];
+console.log("Spread:", arr2);
+
+const sumAll = (...nums) => nums.reduce((a, b) => a + b, 0);
+console.log("Sum with Rest:", sumAll(1, 2, 3, 4));
+
+// Default params
+console.log("Multiply with default param:", multiply(5));
+
+// Async/Await
+const getData = async () => {
+  return new Promise((resolve) =>
+    setTimeout(() => resolve("Blockchain Data Loaded"), 1000)
+  );
 };
-const { hash, value } = transaction;
-console.log(`Transaction Hash: ${hash}, Value: ${value}`);
-
-// 5. Using the other imported variable.
-console.log(`Value of PI from utils.js: ${PI}`);
-
-console.log("--- Lesson Complete ---");
+(async () => {
+  const result = await getData();
+  console.log(result);
+})();
