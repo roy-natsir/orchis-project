@@ -90,6 +90,10 @@ _(Note: Much of this JS will be rewritten in Next.js, so this phase is for funda
 ### **Phase 5 (Weeks 1-3): Testing & Quality Assurance**
 
 ├── Day116-Topic: React Testing Library -> Task: Write a simple unit test for the <ProjectCard> component.
+├── Day 117-119: Web3 Testing Deep Dive
+├── Day 117: Mock wallet providers untuk testing
+├── Day 118: Contract interaction testing
+├── Day 119: E2E testing wallet connection flow
 ├── Day132-Topic: CI/CD Integration -> Task: Create a skeleton GitHub Actions file for frontend tests.
 
 ### **Phase 6 (Weeks 2-3): Web3 Fundamentals & Integration**
@@ -141,6 +145,10 @@ Project Goal: Finalize the project with a CI/CD pipeline and professional docume
 
 Week 1: DevOps Fundamentals for Web3
 ├── Day291-Topic: GitHub Actions -> Task: Create a CI pipeline that runs `forge test` for the Portfolio repo.
+├── Day 292-294: Docker & Environment Management:
+├── Containerize frontend dan backend
+├── Multi-environment deployment strategy
+├── Secrets management implementation
 
 Week 2: Deployment & Infrastructure  
 ├── Day295-Topic: Vercel Deployment -> Task: Ensure the Portfolio DApp is deployed & connected to the L2 Testnet.
