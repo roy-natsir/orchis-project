@@ -30,6 +30,7 @@
   "devDependencies": {
     "pnpm": "^8.0.0",
     "prettier": "^3.6.2",
+    "sass": "^1.92.1",
     "stylelint": "^16.23.1",
     "stylelint-config-standard": "^39.0.0"
   },
