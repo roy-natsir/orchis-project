@@ -8,38 +8,36 @@ class Wallet {
     this.address = address;
     this.balance = balance;
   }
-}
 
-class Portfolio {
-  constructor() {
-    this.wallets = [];
+  deposit(amount) {
+    this.balance += amount;
   }
 
-  addWallet(wallet) {
-    this.wallets.push(wallet);
-  }
-
-  getTotalBalance() {
-    return this.wallets.reduce((sum, w) => sum + w.balance, 0);
-  }
-
-  displayReport() {
-    console.log('Portfolio Summary:');
-    console.log('-------------------');
-    console.log(`Total Wallets: ${this.wallets.length}`);
-    console.log(`Total Balance: ${this.getTotalBalance()} ORC`);
-    console.table(this.wallets.map(w => ({
-      Owner: w.owner,
-      Address: w.address,
-      Balance: w.balance
-    })));
+  withdraw(amount) {
+    this.balance -= amount;
   }
 }
 
-// Example Usage
-const orchisPortfolio = new Portfolio();
-orchisPortfolio.addWallet(new Wallet('ROY', '0xABC123...', 1500));
-orchisPortfolio.addWallet(new Wallet('Dev', '0xDEF456...', 2500));
-orchisPortfolio.addWallet(new Wallet('Tester', '0xGHI789...', 1000));
+class MultiChainWallet extends Wallet {
+  constructor(owner, address, balance, chain) {
+    super(owner, address, balance);
+    this.chain = chain;
+  }
 
-orchisPortfolio.displayReport();
+  switchChain(newChain) {
+    console.log(`Switching from ${this.chain} to ${newChain}`);
+    this.chain = newChain;
+  }
+
+  showDetails() {
+    console.log(
+      `[${this.chain}] ${this.owner}'s Wallet: ${this.address} | Balance: $${this.balance} ORC`
+    );
+  }
+}
+
+// Example usage
+const myWallet = new MultiChainWallet('Roy', '0xAAA', 500, 'Polygon')
+myWallet.deposit(200)
+myWallet.switchChain('Ethereum')
+myWallet.showDetails()
